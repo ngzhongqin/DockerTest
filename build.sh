@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-mvn build
+mvn package -Dmaven.test.skip=true
 docker build ../DockerTest -t docker-test
